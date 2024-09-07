@@ -1,0 +1,17 @@
+<mvc:View controllerName="com.app.practice.controller.Home"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <Button id="idDialogbox"
+        text="OPen DialogBox"
+        type="Emphasized"
+        press="onClickDialogBox">
+        </Button>
+        <Button id="idSendmail"
+        text="Send Email"
+        type="Success"
+        press="onPressSendEmail">
+        </Button>
+
+    </Page>
+</mvc:View>

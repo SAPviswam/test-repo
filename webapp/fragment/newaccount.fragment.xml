@@ -1,0 +1,123 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+>
+    <Dialog
+        id="idAdminDialog"
+        title="Admin page"
+        class="sapUiResponsivePadding"
+        stretch="false"
+    >
+        <customHeader>
+            <Bar id="idDialogHeader">
+                <contentLeft>
+                    <Title
+                        id="idAdminPage"
+                        text="Admin page"
+                    />
+                </contentLeft>
+                <contentRight>
+                    <Button
+                        id="applyColorButton"
+                        press="onClose"
+                        type="Reject"
+                        tooltip="Close"
+                        icon="sap-icon://decline"
+                    />
+                </contentRight>
+            </Bar>
+        </customHeader>
+        <VBox
+            id="idDialogContent"
+            class="sapUiSmallMargin sapUiResponsiveMargin"
+        >
+            <Label
+                id="idEmployeeIDLabel"
+                text="Employee ID:"
+                required="true"
+            />
+            <Input
+                id="idEmployeeIDInput"
+                placeholder="Enter Employee ID"
+            />
+
+            <Label
+                id="idEmployeeNameLabel"
+                text="Name:"
+                required="true"
+            />
+            <Input
+                id="idNameInput"
+                placeholder="Enter Name"
+            />
+
+            <Label
+                id="idEmployeeEmailLabel"
+                text="Email:"
+                required="true"
+            />
+            <Input
+                id="idEmailInput"
+                placeholder="Enter Email"
+            />
+
+            <Label
+                id="idEmployeePhoneLabel"
+                text="Phone:"
+                required="true"
+            />
+            <Input
+                id="idPhoneInput"
+                placeholder="Enter Phone"
+            />
+
+            <Label
+                id="idEmployeeAreaLabel"
+                text="Process Area:"
+                required="true"
+            />
+            <ComboBox
+                id="idAreaInput"
+                placeholder="Select Area from Dropdown"
+            >
+                <!-- Populate with items as needed -->
+            </ComboBox>
+
+            <Label
+                id="idEmployeeGroupLabel"
+                text="Group:"
+                required="true"
+            />
+            <ComboBox
+                id="idGroupInput"
+                placeholder="Select Group from Dropdown"
+            >
+                <!-- Populate with items as needed -->
+            </ComboBox>
+
+            <Label
+                id="idEmployeeQueueLabel"
+                text="Queue:"
+                required="true"
+            />
+            <ComboBox
+                id="idQueueInput"
+                placeholder="Select Queue from Dropdown"
+            >
+                <!-- Populate with items as needed -->
+            </ComboBox>
+        </VBox>
+        <HBox
+            id="idButton"
+            justifyContent="SpaceAround"
+        >
+            <Button
+                id="idApproveButton"
+                text="Approve"
+                type="Emphasized"
+                press="onApprove"
+               
+            />
+        </HBox>
+    </Dialog>
+</core:FragmentDefinition>
