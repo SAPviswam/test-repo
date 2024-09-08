@@ -12,6 +12,11 @@
         type="Success"
         press="onPressSendEmail">
         </Button>
+        <Button id="idTest"
+        text="Test button"
+        type="Critical"
+        press="onTestButton">
+        </Button>
 
     </Page>
 </mvc:View>
