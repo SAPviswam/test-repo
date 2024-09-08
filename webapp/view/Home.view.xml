@@ -17,6 +17,11 @@
         type="Critical"
         press="onTestButton">
         </Button>
+        <Button id="idTest2"
+        text="Test button2"
+        type="Ghost"
+        press="onTestButton2">
+        </Button>
 
     </Page>
 </mvc:View>
