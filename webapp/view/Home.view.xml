@@ -22,6 +22,12 @@
         type="Ghost"
         press="onTestButton2">
         </Button>
+        <ToolbarSpacer id="idToolSpacer"></ToolbarSpacer>
+         <Button id="idTest3"
+        text="Test button3"
+        type="Attention"
+        press="onTestButton3">
+        </Button>
 
     </Page>
 </mvc:View>
